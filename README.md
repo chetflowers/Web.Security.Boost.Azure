@@ -1,18 +1,22 @@
 # Azure-Based-Web-Infrastructure-Enhancement
-This project focuses on developing and securing a cloud-based web application to host a cyber blog. It aims to provide a secure platform for sharing cybersecurity insights and updates.
 
-Cloud Setup Overview:
-•The cloud infrastructure is built on robust Azure services, ensuring high availability and scalability. Key 
- components include Azure App Service for web hosting and Azure SQL Database for data storage.
+Overview
+This project focuses on developing and securing a cloud-based web application designed to host a cybersecurity blog. Built on Azure, the platform prioritizes high availability, scalability, and robust security, serving as a resilient environment for sharing cybersecurity insights and updates.
 
-Components and Functionality:
-•The web application utilizes a Flask framework for backend logic and Bootstrap for frontend design, 
- ensuring a responsive and user-friendly interface. Authentication and authorization are managed using 
- Azure Active Directory for enhanced security.
+Key Components
+- Cloud Infrastructure: Deployed using Azure App Service for web hosting and Azure SQL Database for data storage, ensuring seamless scalability and reliability.
+- Backend: Implemented with Flask for backend logic and Bootstrap for frontend design, offering a responsive and user-friendly interface.
+- Authentication & Authorization: Integrated with Azure Active Directory (AAD) to enhance access control and secure the application against unauthorized access.
 
-Traffic and Security:
-•HTTPS traffic is enforced using Azure Front Door for secure communication. Role-based access control 
- (RBAC) is implemented to manage user permissions effectively. Regular security audits and updates 
- maintain the application’s integrity.
+Traffic & Security Measures
+- Azure Front Door: Configured to enforce HTTPS traffic, ensuring secure communication and optimized content delivery.
+- Web Application Firewall (WAF): Custom rules applied to mitigate threats such as SQL injection, PHP injection, and cross-site scripting (XSS) attacks.
+- Role-Based Access Control (RBAC): Implemented for managing user permissions and controlling access to sensitive resources.
+- Security Best Practices: Regular audits, updates, and SSL/TLS certificates applied to maintain data integrity and confidentiality.
 
-The Secure Cyber Blog Web Application project establishes a resilient platform for disseminating cybersecurity knowledge. By leveraging Azure’s services and adhering to best security practices, the application ensures reliable performance and robust protection against potential threats.
+Vulnerability Mitigation
+- WAF Custom Rules: Example rules include blocking traffic from specific regions and filtering malicious patterns in requests.
+- Input Validation & Sanitization: Applied to prevent injection attacks and ensure robust backend security.
+
+Summary
+This project successfully establishes a secure, scalable platform for disseminating cybersecurity knowledge. By leveraging Azure’s cloud services and adhering to industry best practices, the application ensures high performance while remaining resilient to potential threats.
